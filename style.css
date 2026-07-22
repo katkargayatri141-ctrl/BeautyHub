@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:white;
+}
+
+nav{
+    height:70px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#0d6efd;
+    font-size:28px;
+}
+
+.logo h2{
+    color:#333;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#0d6efd;
+}
+
+.right-nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:bold;
+}
+
+.user i{
+    width:35px;
+    height:35px;
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+}
+
+.logout{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.logout:hover{
+    background:#bb2d3b;
+}
+
+.container{
+    width:95%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:35% 63%;
+    gap:25px;
+}
+
+.left{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.left h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#0d6efd;
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+.cart-icon{
+    font-size:45px;
+    color:#999;
+    margin:20px 0;
+}
+
+.total{
+    margin:20px 0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.booking{
+    margin-top:30px;
+}
+
+.booking h2{
+    margin-bottom:15px;
+}
+
+.booking input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.booking button{
+    width:100%;
+    background:#198754;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.booking button:hover{
+    background:#157347;
+}
+
+.right{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.right h2{
+    margin-bottom:10px;
+}
+
+.right p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.service-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.service-card{
+    width:31%;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+}
+
+.service-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.service-card h3{
+    margin-top:15px;
+    text-align:center;
+}
+
+.service-card h4{
+    text-align:center;
+    color:#0d6efd;
+    margin:10px 0;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:15px;
+}
+
+.skip{
+    background:#ffc107;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.skip:hover{
+    background:#e0a800;
+}
+
+.add{
+    background:#198754;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.add:hover{
+    background:#157347;
+}
+
+.bottom{
+    margin-top:35px;
+    text-align:center;
+    font-size:17px;
+}
+
+.bottom input{
+    transform:scale(1.2);
+    margin-right:8px;
+}
+
+.cartBtn,
+.bookBtn{
+    padding:12px 22px;
+    margin:15px 10px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.cartBtn{
+    background:#0d6efd;
+}
+
+.bookBtn{
+    background:#198754;
+}
+
+.cartBtn:hover{
+    background:#0b5ed7;
+}
+
+.bookBtn:hover{
+    background:#157347;
+}
+

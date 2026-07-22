@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-scissors"></i>
+            <h2>ServiceHub</h2>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="right-nav">
+
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                User
+            </div>
+
+            <button class="logout">Logout</button>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="left">
+
+            <h2>Added Items</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>S.No</th>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="cartBody">
+
+                    <tr id="emptyRow">
+
+                        <td colspan="3">
+
+                            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+
+                            <p>No Items Added</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="total">
+
+                <h3>Total Amount : ₹ <span id="total">0</span></h3>
+
+            </div>
+
+            <div class="booking">
+
+                <h2>Book Now</h2>
+
+                <input type="text" id="name" placeholder="Full Name">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="password" id="password" placeholder="Password">
+
+                <button onclick="bookNow()">Book Now</button>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <h2>Browse Our Services</h2>
+
+            <p>
+                Choose your favourite salon services and add them to your booking.
+            </p>
+
+            <div class="service-container">
+
+                <div class="service-card">
+
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=400" alt="">
+
+                    <h3>Hair Cut</h3>
+
+                    <h4>₹500</h4>
+
+                    <div class="buttons">
+
+                        <button class="skip" onclick="skipItem()">Skip Item</button>
+
+                        <button class="add"
+                        onclick="addItem('Hair Cut',500)">Add Item</button>
+
+                    </div>
+
+                </div>
+
+                <div class="service-card">
+
+                    <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=400" alt="">
+
+                    <h3>Nail Art</h3>
+
+                    <h4>₹800</h4>
+
+                    <div class="buttons">
+
+                        <button class="skip" onclick="skipItem()">Skip Item</button>
+
+                        <button class="add"
+                        onclick="addItem('Facial',800)">Add Item</button>
+
+                    </div>
+
+                </div>
+
+                <div class="service-card">
+
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="">
+
+                    <h3>Makeup</h3>
+
+                    <h4>₹15,000</h4>
+
+                    <div class="buttons">
+
+                        <button class="skip" onclick="skipItem()">Skip Item</button>
+
+                        <button class="add"
+                        onclick="addItem('Spa',1200)">Add Item</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom">
+
+                <input type="radio">
+                Add the items to the cart and book now
+
+                <br><br>
+
+                <button class="cartBtn" onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+                <button class="bookBtn" onclick="bookNow()">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
